@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!-- USER ICON -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.09">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="start">
+
+            <ImageView
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:background="@drawable/adduser">
+            </ImageView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- FULL NAME -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.06"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-thin"
+                android:text="Full Name">
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/txtSignUpFullName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:lines="1"
+                android:textColor="@color/black"
+                android:textSize="20sp">
+            </EditText>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <!-- EMAIL -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.06"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-thin"
+                android:text="E-mail">
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/txtSignUpEmail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:lines="1"
+                android:textColor="@color/black"
+                android:textSize="20sp">
+            </EditText>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- USERNAME -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.06"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-thin"
+                android:text="Username">
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/txtSignUpUsername"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:lines="1"
+                android:textColor="@color/black"
+                android:textSize="20sp">
+            </EditText>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- PASSWORD -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.06"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Password"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-thin"
+                android:textSize="20sp">
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="20dp">
+
+            <com.maksim88.passwordedittext.PasswordEditText
+                android:id="@+id/txtSignUpPassword"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textPassword"
+                android:lines="1"
+                android:textColor="@color/black"
+                android:textSize="20sp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <!-- SIGN IN & BACK -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.08"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <Button
+                android:id="@+id/btnSignUp"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="SIGN UP"
+                android:textSize="18sp"
+                android:background="@drawable/style">
+            </Button>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnBack"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:fontFamily="sans-serif-medium"
+                android:text="BACK"
+                android:textColor="@color/black"
+                android:textSize="16sp">
+            </Button>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
